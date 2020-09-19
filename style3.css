@@ -1,0 +1,383 @@
+* {
+    padding: 0;
+    margin: 0;
+    text-decoration: none;
+    list-style: none;
+    box-sizing: border-box;
+    
+  }
+  body{
+    background-image: linear-gradient(to right, #DAE2F8 0%, #D6A4A4 51%, #DAE2F8 100%)
+  }
+
+  nav {
+    background: #424242e0;
+    height: 80px;
+    width: 100%;
+  }
+
+  .logo {
+    color: white;
+    font-size: 30px;
+    line-height: 80px;
+    letter-spacing: 3px;
+    padding: 0 80px;
+    font-weight: 600;
+  }
+
+  .logo:hover {
+    background: none;
+  }
+
+  nav ul {
+    float: right;
+    margin-right: 20px;
+  }
+
+  nav ul li {
+    display: inline-block;
+    line-height: 80px;
+    margin: 0 5px;
+  }
+
+  nav ul li a {
+    color: white;
+    font-size: 16px;
+    padding: 7px 13px;
+    border-radius: 3px;
+    text-transform: uppercase;
+
+  }
+
+  .active.active,
+  .item-list a:hover {
+    background: #fafafa33;
+    transition: .5s;
+    color: white;
+  }
+
+  .checkbtn {
+    font-size: 30px;
+    color: white;
+    float: right;
+    line-height: 80px;
+    margin-right: 40px;
+    cursor: pointer;
+    display: none;
+  }
+
+  #check {
+    display: none;
+  }
+  .inputbox {
+    border: none;
+    outline: none;
+  
+    float: left;
+    padding: 0;
+     font-size: 16px;
+    transition: 0.4s all;
+    line-height: 2px;
+    width: 0px;
+    
+    border-radius: 7px;
+    color: white;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    background: #757575;
+  }
+  
+  
+  .btn {
+    color: #424242;
+    float: right;
+    text-decoration: none;
+    width: 26px;
+    height: 23px;
+    line-height: 25px;
+    text-align: center;
+    justify-content: center;
+    border-radius: 50%;
+
+
+  }
+
+  .searchbox {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    width: 100%;
+
+
+    height: auto;
+    border-radius: 1px;
+
+  }
+  ::placeholder{
+    color: white;
+  }
+
+  .searchbox:hover .inputbox {
+    width: 240px;
+    padding: 0px 6px;
+    
+  }
+
+  .btn {
+    margin-top: 10px;
+    margin-bottom: 10px;
+
+  }
+
+
+
+
+  .container {
+
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    /* align-items: center; */
+    justify-content: center;
+    margin-top: 70px;
+
+    /* margin-right: 20px; */
+    margin-left: 20px;
+  }
+
+  #subject {
+    margin: 5px;
+  }
+
+  #subject:hover {
+    transform: scale(1.08);
+    transition: all 0.3s linear;
+  }
+  
+  
+  @media (max-width: 952px) {
+    .logo {
+      font-size: 25px;
+      padding-left: 50px;
+    }
+    
+    nav ul li a {
+      font-size: 16px;
+      
+    }
+    .inputbox {
+      transition: 0.4s all;
+    }
+    
+  }
+
+  
+  @media (max-width: 858px) {
+    .checkbtn {
+        display: block;
+        line-height: 58px;
+    }
+    nav ul {
+        position: fixed;
+        width: 100%;
+      height: 100vh;
+      background: #757575c7;
+      
+      top: 80px;
+      left: -100%;
+      text-align: center;
+      transition: all .5s;
+    }
+    
+    nav ul li {
+      display: block;
+      margin: 50px 0;
+      line-height: 30px;
+    }
+    
+    nav ul li a {
+        font-size: 20px;
+    }
+    
+    #check:checked~ul {
+        left: 0;
+    }
+    
+}
+
+
+@media (max-width: 430px) {
+    .checkbtn {
+        color: white;
+    }
+    
+    .container {
+        margin-left: 5px;
+        
+        
+    }
+    
+    }
+    
+        #subject:hover{
+            transition: none;
+            transform: none;
+    }
+    .inputbox {
+      width: 0px;
+      transition: 0.4s all;
+    }
+  
+  @media (max-width: 340px) {
+      
+    .inputbox{
+      width: 100px;
+    }
+  }
+  @media(max-width:361px){
+    .logo{
+      font-size: 19px;
+      padding: 0 30px;
+    }
+  }
+  
+  @media(max-width: 333px) {
+    
+    .footer{
+        display: block;
+    }
+    .footer ul li a {
+        font-size: 7px;
+    }
+    .footer ul li{
+        margin:0 3px;
+    }
+    .container {
+        margin-left: 5px;
+        
+        
+    }
+    #subject:hover{
+        transition: none;
+        transform: none;
+    }
+
+}
+
+@media(max-width: 320px) {
+    .logo {
+        padding: 0px;
+        margin: 5px 0px 5px 20px;
+    }
+    
+    #subject {
+      width: 290px;
+    }
+    #subject:hover{
+        transition: none;
+        transform: none;
+    }
+            .footer ul li a {
+                font-size: 10px;
+            }
+    .footer ul li{
+    margin:0 2px;
+    }
+    }
+    @media(max-width: 220px) {
+    .logo {
+    padding: 0px;
+    font-size: 10px;
+    margin: 5px 0px 5px 20px;   }}
+                                                    
+.footer {
+  border: 1px solid rebeccapurple;
+  background-color:#757575;
+display: flex;
+bottom: 0px;
+/* position: sticky; */
+margin-top: 30px;
+justify-content: center;
+width: 100%;
+}
+
+.footer ul li {
+  display: inline-block;
+  margin: 0 40px;
+}
+.footer ul {
+  padding: 7px 0px;
+}
+.footer ul li a{
+  margin: 0 5px;
+  color: white;
+}
+.footer ul li a:hover{
+  color: rgb(235, 67, 67);
+}
+#social-media-icon .facebook i:hover {
+      color: blue;
+
+    }
+
+    #social-media-icon  .youtube i:hover {
+      color: red;
+
+    }
+
+    #social-media-icon  .insta i:hover {
+      color: rgba(223, 13, 13, 0.74);
+
+    }
+
+    #social-media-icon  .twitter i:hover {
+      color: skyblue;
+
+    }
+#social-media-icon i{
+  color: white;
+}
+.wrapper{
+  margin: 10px;
+
+}
+.wrapper .title{
+  text-align: center;
+  margin: 30px auto 20px auto;
+  font-size: 20px;
+  color: #ECE9E6;
+  /* font-family: sans-serif; */
+}
+.our-team{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+
+width: auto;
+background-image: linear-gradient(to right, #DAE2F8 0%, #D6A4A4 51%, #DAE2F8 100%)
+
+}
+.person{
+  margin: 15px ;
+  padding: 25px;
+  width: 325px;
+border:1px solid burlywood;
+background-image: linear-gradient(to right, #ECE9E6 0%, #FFFFFF 51%, #ECE9E6 100%);
+border-radius: 10px;
+box-shadow: 4px 4px 4px rgba(248, 184, 195, 0.89);
+}
+.person img{
+  
+  width:  200px;
+  margin-left: 37px;
+  border-radius: 50%;
+}
+.person .about {
+  text-align: center;
+  margin-top: 15px;
+
+}
+.about p{
+  margin-top: 20px;
+}
